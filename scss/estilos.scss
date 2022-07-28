@@ -1,0 +1,590 @@
+@import "variables";
+
+
+
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* -------IMG-------- */
+img{
+    width: 100%;
+}
+
+/* ------------------------MAIN------------------------- */
+/*--------BANNER--------*/
+
+.banner{
+    position: relative;
+    display: inline-block;
+    text-align: left;
+        &__bienvenida {
+            font-size: $text-large;
+            color: $color-secondary;
+            position: absolute;
+            left: 5%;
+            top: 15%;
+            font-family: $font-principal;
+            animation-name: bienvenida;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            }
+        &__descripcion {
+            position: absolute;
+            left: 5%;
+            top: 40%;
+            width: 50%;
+            color: $text-color;
+            font-family: $font-principal;
+            font-size: $text-small;
+            text-align: justify;
+        }
+        &__btn{
+            position: absolute;
+            left: 20%;
+            top: 73%;
+            padding: 0.8rem 2rem 0.8rem 2rem;
+            border-radius: 20px;
+            border-color: $text-color;
+            color: $text-color;
+            background-color: $color-primary;
+            font-family: $font-principal;
+            font-weight: bolder;
+            text-align: center;
+            transition: background ease-in .3s;
+            font-size: $text-base;
+        }
+        &__btn:hover {
+            background: #ec4c73;
+        }
+        &__img{
+            z-index: -1;
+        }
+}
+
+    @keyframes bienvenida {
+        0%   {color: #a10c32;}
+        15%  {color: #644454;}
+        30%  {color: #a10c32;}
+        45%  {color: #ec4c73;}
+        60% {color: #ff94af;}
+        75%  {color: #ff84a3;}
+        90%  {color: #ec4c73;}
+        100%   {color: #a10c32;}
+      }
+      
+
+
+
+/* ----------ARTICULOS BLOG HOME---------- */
+
+.destacados{
+    display:grid;
+    grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "articulo1 articulo2 articulo3 articulo4";
+    gap: $spacing-large;
+    justify-content: center;
+    padding: $spacing-small;
+    margin: $spacing-medium;
+        &__titulo{
+            display: grid;
+            grid-area: titulo;
+            padding: $spacing-small;
+            text-align: center;
+            color: $text-color;
+            font-size: $text-large;
+            font-family: $font-principal;
+            font-weight:bolder;
+        }
+}
+
+.destacados__articulo{
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xsmall;
+    flex: 1 1 clamp(300px, 30%, 400px);
+    &--info{
+        display: flex;
+        flex-direction: column;
+        padding: $spacing-small;
+    }
+    &--titulo{
+        font-family: $font-principal;
+        text-align: center;
+        font-size: $text-medium;
+        color: $text-color;
+        font-weight: bolder;
+    }
+    &--subtitulo{
+        font-family: $font-principal;
+        text-align: left;
+        color: $text-color;
+        font-size: 14px;
+        margin-top: 0.8rem;
+    }
+    &--leer{
+        font-family: $font-principal;
+        text-align: center;
+        color: $color-secondary;
+        font-size: $text-small;
+        margin-top: 1rem;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+    &:nth-last-of-type(1){
+        grid-area: articulo1;
+    }
+    &:nth-last-of-type(2){
+        grid-area: articulo2;
+    }
+    &:nth-last-of-type(3){
+        grid-area: articulo3;
+    }
+    &:nth-last-of-type(4){
+        grid-area: articulo4;
+    }
+}
+
+/* --------BLOG-------- */
+
+.section__blog{
+    font-family: $font-principal;
+    color: $text-color;
+}
+
+.section__introduccion{
+    font-size: $text-base;
+    justify-content: center;
+    text-align: justify;
+}
+
+.section__articulo{
+    margin-top: $spacing-medium;
+    &--titulo{
+        font-size: $text-medium;
+    }
+    &--resumen{
+        font-size: $text-base;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    &--leer{
+        font-size: $text-small;
+        color: $color-secondary;
+        }
+}
+
+
+/* --------NOSOTROS-------- */
+
+.nosotros__texto{
+    font-family: $font-principal;
+    font-size: $text-base;
+    text-align: justify;
+    padding: 5rem;
+    height: fit-content;
+    color: $text-color;
+}
+
+/* ---------CONTACTO--------- */
+
+
+.body__contacto{
+    background: linear-gradient(to top, #ec4c746e , #ffffff);
+
+}
+
+.contacto__medios{
+    font-family: $font-principal;
+    font-size: $text-medium;
+    color: $text-color;
+}
+
+.contacto__redes{
+    font-family: $font-principal;
+    padding-top: 32px;
+    &--enlace{
+        padding-top: 16px;
+        font-size: $text-medium;
+        text-decoration: none;
+        color: $color-secondary;
+    }
+}
+
+.contacto__formulario{
+    font-family: $font-principal;
+    font-size: $text-base;
+    color: $text-color;
+    &--titulo{
+        font-weight: bolder;
+        color: $text-color;
+        padding-bottom: 8px;
+    }
+}
+
+.contacto__mensaje--btn{
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    color:$text-color; 
+    font-family: $font-principal; 
+    font-size: $text-xsmall; 
+    font-weight: bolder;
+    background-color: $color-primary;
+    border-radius: 10%;
+    border-color: $text-color;
+}
+
+
+/* ----------TERAPIA FLORAL--------- */
+
+.terapia__texto {
+    font-family: $font-principal;
+    font-size: $text-small;
+    text-align: justify;
+    padding: 5rem;
+    height: fit-content;
+}
+
+.terapia__ubicacion{
+    display: grid;
+    grid-template-areas: 
+    "boton1 boton2"
+}
+.terapia__gotero--btn{
+    grid-area: boton1;
+    padding: 0.8rem 2rem 0.8rem 2rem;
+    border-radius: 20px;
+    border-color: $text-color;
+    color: $color-primary;
+    background-color: $color-secondary;
+    font-family: $font-principal;
+    font-weight: bolder;
+    margin: auto;
+    font-size: $text-base;
+}
+
+.terapia__sesion--btn{
+    grid-area: boton2;
+    padding: 0.8rem 2rem 0.8rem 2rem;
+    border-radius: 20px;
+    border-color: $text-color;
+    color:$color-primary;
+    background-color:$color-secondary;
+    font-family: $font-principal;
+    font-weight: bolder;    
+    margin: auto;
+    font-size: $text-base;
+}
+
+.section__sistemas{
+    display:grid;
+    grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "articulo1 articulo2 articulo3 articulo4";
+    gap: $spacing-large;
+    justify-content: center;
+    padding: $spacing-small;
+    margin: $spacing-medium;
+
+}
+.sistemas__titulo{
+    display: grid;
+    grid-area: titulo;
+    padding: $spacing-small;
+    text-align: center;
+    color:$text-color;
+    font-size: $text-medium;
+    font-family: $font-principal;
+    font-weight:bolder;
+}
+
+.sistemas__articulo{
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xsmall;
+    flex: 1 1 clamp(300px, 30%, 400px);
+}
+
+.sistemas__articulo:nth-last-of-type(1){
+    grid-area: articulo1;
+}
+
+.sistemas__articulo:nth-last-of-type(2){
+    grid-area: articulo2;
+}
+
+.sistemas__articulo:nth-last-of-type(3){
+    grid-area: articulo3;
+}
+
+.sistemas__articulo:nth-last-of-type(4){
+    grid-area: articulo4;
+}
+
+.sistemas__articulo{
+    display: flex;
+    flex-direction: column;
+    padding: $spacing-xsmall;
+
+}
+
+.sistemas__subtitulo{
+    font-family: $font-principal;
+    text-align: center;
+    font-weight: bolder;
+    font-size:$text-small;
+    color: $text-color;
+    text-decoration: none;
+    padding: $spacing-small;
+}
+
+
+/* MAIN TITULOS PAG */
+.main__titulo{
+    font-family: $font-principal;
+    padding: 1em 4em 1em;
+    font-size: $text-medium;
+    color: $text-color;
+    font-weight: bolder;
+}
+
+/* --------FOOTER-------- */
+
+.footer{
+    line-height:1.8em ;
+    &__titulos {
+        font-weight: bolder;
+        line-height:1.8em ;
+}
+}
+
+/* -----------------------------------MQ---------------------------------- */
+
+/* ---------------------------------Mobile-------------------------------- */
+
+@media screen and (max-width:480px){
+    /* HEADER */
+    .header{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        vertical-align: center;
+        font-size: $text-xxsmall;
+        &__logo{
+            max-width: 150px;
+            text-align: center;
+        }
+        &__navbar--principal li {
+            display: block;
+            padding: $spacing-xsmall;
+            text-align: center;
+            }
+    }
+
+    /* BANNER */
+   
+    .banner{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        &__bienvenida {
+            font-size: $text-medium;
+            color: $color-secondary;
+            position: absolute;
+            text-align: center;
+            font-family: $font-principal;
+            left: 30%;
+            right: 20%;
+            top: 10%;
+            width: 40%;
+            }
+        &__descripcion {
+            position: absolute;
+            left: 10%;
+            top: 25%;
+            padding: $spacing-small;
+            width: 80%;
+            color: $text-color;
+            font-family: $font-principal;
+            font-size: $text-small;
+            text-align: justify;
+        }
+        &__btn{
+            position: absolute;
+            padding: 0.8rem 2rem 0.8rem 2rem;
+            border-radius: 20px;
+            border-color: $text-color;
+            color: $text-color;
+            background-color: $color-primary;
+            font-family: $font-principal;
+            font-weight: bolder;
+            text-align: center;
+            font-size: $text-small;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &__img{
+            z-index: -1;
+            height: 70rem;
+        }
+    }
+    
+
+    /* ARTICULOS */
+    .destacados {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        &__titulo {
+            font-size: $spacing-medium;
+        }
+
+    }
+
+/* 
+    /* SISTEMAS */
+    .section__sistemas{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-bottom: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .sistemas__articulo{
+        padding-bottom: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .sistemas__subtitulo {
+        font-size:medium;
+        padding-bottom: 3rem;
+        margin-bottom: 1rem;
+    } 
+
+    /* FOOTER */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        &__contactanos{
+            width: 100%;
+            padding: 4rem 5rem 1rem 5rem;
+        }
+        &__social{
+            width: 100%;
+            padding: 2rem 5rem 2rem 5rem;
+        }
+        &__newsletter{
+            width: 100%;
+            padding: 1rem 5rem 4rem 5rem;
+        }
+        &__newsletter--input{
+            height: 2rem;
+            width: 18rem;
+        }
+
+    
+    }
+        
+    /* TERAPIA FLORAL */
+    
+    .terapia__gotero--btn{
+        font-size: $text-xsmall;
+    }
+    
+    .terapia__sesion--btn{
+        font-size: $text-xsmall;
+    }
+    
+
+    /* MAIN TITULOS PAG */
+    .main__titulo{
+        padding-left: 2em;
+    }
+
+}
+
+
+
+/*---------------------------- -----Tablet------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 978px) {
+    
+    /* HEADER */
+    .header{
+        display: flex;
+        justify-content: space-between;
+        font-size: $text-xxsmall;
+    }
+
+    /* BANNER */
+
+    .banner{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+            &__bienvenida {
+            font-size: $text-medium;
+            color: $color-secondary;
+            position: absolute;
+            text-align: left;
+            font-family: $font-principal;
+            left: 10%;
+            right: 20%;
+            top: 10%;
+            width: 90%;
+            }
+            &__descripcion {
+                position: absolute;
+                text-align: justify;
+                left: 5%;
+                top: 20%;
+                padding: $spacing-small;
+                width: 60%;
+                color: $text-color;
+                font-family: $font-principal;
+                font-size: $text-small;
+            }
+            &__btn{
+                position: absolute;
+                padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+                border-radius: 20px;
+                border-color: $text-color;
+                color: $text-color;
+                background-color: $color-primary;
+                font-family: $font-principal;
+                font-size: $text-small;
+                font-weight: bolder;
+                text-align: center;
+                top: 84%;
+                left: 20%;
+                transform: translate(-50%, -50%);
+            }
+            &__img{
+                z-index: -1;
+            }
+    }
+    
+      /* ARTICULOS DESTACADOS */
+    .destacados {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .destacados>div{
+        width: 50%;
+    }
+
+}
