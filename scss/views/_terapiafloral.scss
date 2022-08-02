@@ -1,0 +1,96 @@
+/* ----------TERAPIA FLORAL--------- */
+
+.terapia__texto {
+    font-family: $font-principal;
+    font-size: $text-small;
+    text-align: justify;
+    padding: 5rem;
+    height: fit-content;
+}
+
+.terapia__ubicacion{
+    display: grid;
+    grid-template-areas: 
+    "boton1 boton2"
+}
+.terapia__gotero--btn{
+    grid-area: boton1;
+    padding: 0.8rem 2rem 0.8rem 2rem;
+    border-radius: 20px;
+    border-color: $text-color;
+    color: $color-primary;
+    background-color: $color-secondary;
+    font-family: $font-principal;
+    font-weight: bolder;
+    margin: auto;
+    font-size: $text-base;
+}
+
+.terapia__sesion--btn{
+    grid-area: boton2;
+    padding: 0.8rem 2rem 0.8rem 2rem;
+    border-radius: 20px;
+    border-color: $text-color;
+    color:$color-primary;
+    background-color:$color-secondary;
+    font-family: $font-principal;
+    font-weight: bolder;    
+    margin: auto;
+    font-size: $text-base;
+}
+
+
+.sistemas{
+    display:grid;
+    grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "articulo1 articulo2 articulo3 articulo4";
+    gap: $spacing-large;
+    justify-content: center;
+    padding: $spacing-small;
+    margin: $spacing-medium;
+    &__titulo{
+        display: grid;
+        grid-area: titulo;
+        padding: $spacing-small;
+        text-align: center;
+        color:$text-color;
+        font-size: $text-medium;
+        font-family: $font-principal;
+        font-weight:bolder;
+    }
+    &__articulo{
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-xsmall;
+        flex: 1 1 clamp(300px, 30%, 400px);
+        &--div{
+            display: flex;
+            flex-direction: column;
+            padding: $spacing-small;
+        }
+        &--titulo{
+            font-family: $font-principal;
+            text-align: center;
+            font-weight: bolder;
+            font-size:$text-small;
+            color: $text-color;
+            text-decoration: none;
+            padding: $spacing-small;
+        }
+        &:nth-last-of-type(1){
+            grid-area: articulo1;
+        }
+        &:nth-last-of-type(2){
+            grid-area: articulo2;
+        }
+        &:nth-last-of-type(3){
+            grid-area: articulo3;
+        }
+        &:nth-last-of-type(4){
+            grid-area: articulo4;
+        } 
+    }   
+
+}
+

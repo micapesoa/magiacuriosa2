@@ -1,0 +1,47 @@
+/* ---------CONTACTO--------- */
+
+
+.body__contacto{
+    background: linear-gradient(to top, #ec4c746e , #ffffff);
+
+}
+
+.contacto__medios{
+    font-family: $font-principal;
+    font-size: $text-medium;
+    color: $text-color;
+}
+
+.contacto__redes{
+    font-family: $font-principal;
+    padding-top: 32px;
+    &--enlace{
+        padding-top: 16px;
+        font-size: $text-medium;
+        text-decoration: none;
+        color: $color-secondary;
+    }
+}
+
+.contacto__formulario{
+    font-family: $font-principal;
+    font-size: $text-base;
+    color: $text-color;
+    &--titulo{
+        font-weight: bolder;
+        color: $text-color;
+        padding-bottom: 8px;
+    }
+}
+
+.contacto__mensaje--btn{
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    color:$text-color; 
+    font-family: $font-principal; 
+    font-size: $text-xsmall; 
+    font-weight: bolder;
+    background-color: $color-primary;
+    border-radius: 20px;
+    border-color: $text-color;
+}

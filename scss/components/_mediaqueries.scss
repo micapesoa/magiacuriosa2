@@ -1,0 +1,223 @@
+
+
+/* -----------------------------------MQ---------------------------------- */
+
+/* ---------------------------------Mobile-------------------------------- */
+
+@media screen and (max-width:480px){
+    /* HEADER */
+    .header{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        vertical-align: center;
+        font-size: $text-xxsmall;
+        &__logo{
+            max-width: 150px;
+            text-align: center;
+        }
+        &__navbar--principal li {
+            display: block;
+            padding: $spacing-xsmall;
+            text-align: center;
+            }
+    }
+
+    /* BANNER */
+   
+    .banner{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        &__bienvenida {
+            font-size: $text-medium;
+            color: $color-secondary;
+            position: absolute;
+            text-align: center;
+            font-family: $font-principal;
+            left: 30%;
+            right: 20%;
+            top: 10%;
+            width: 40%;
+            }
+        &__descripcion {
+            position: absolute;
+            left: 10%;
+            top: 25%;
+            padding: $spacing-small;
+            width: 80%;
+            color: $text-color;
+            font-family: $font-principal;
+            font-size: $text-small;
+            text-align: justify;
+        }
+        &__btn{
+            position: absolute;
+            padding: 0.8rem 2rem 0.8rem 2rem;
+            border-radius: 20px;
+            border-color: $text-color;
+            color: $text-color;
+            background-color: $color-primary;
+            font-family: $font-principal;
+            font-weight: bolder;
+            text-align: center;
+            font-size: $text-small;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &__img{
+            z-index: -1;
+            height: 70rem;
+        }
+    }
+    
+
+    /* ARTICULOS */
+    .destacados {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        &__titulo {
+            font-size: $spacing-medium;
+        }
+
+    }
+
+/* 
+    /* SISTEMAS */
+    .section__sistemas{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-bottom: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .sistemas__articulo{
+        padding-bottom: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .sistemas__subtitulo {
+        font-size:medium;
+        padding-bottom: 3rem;
+        margin-bottom: 1rem;
+    } 
+
+    /* FOOTER */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        &__contactanos{
+            width: 100%;
+            padding: 4rem 5rem 1rem 5rem;
+        }
+        &__social{
+            width: 100%;
+            padding: 2rem 5rem 2rem 5rem;
+        }
+        &__newsletter{
+            width: 100%;
+            padding: 1rem 5rem 4rem 5rem;
+        }
+        &__newsletter--input{
+            height: 2rem;
+            width: 18rem;
+        }
+
+    
+    }
+        
+    /* TERAPIA FLORAL */
+    
+    .terapia__gotero--btn{
+        font-size: $text-xsmall;
+    }
+    
+    .terapia__sesion--btn{
+        font-size: $text-xsmall;
+    }
+    
+
+    /* MAIN TITULOS PAG */
+    .main__titulo{
+        padding-left: 2em;
+    }
+
+}
+
+
+
+/*---------------------------- -----Tablet------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 978px) {
+    
+    /* HEADER */
+    .header{
+        display: flex;
+        justify-content: space-between;
+        font-size: $text-xxsmall;
+    }
+
+    /* BANNER */
+
+    .banner{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+            &__bienvenida {
+            font-size: $text-medium;
+            color: $color-secondary;
+            position: absolute;
+            text-align: left;
+            font-family: $font-principal;
+            left: 10%;
+            right: 20%;
+            top: 10%;
+            width: 90%;
+            }
+            &__descripcion {
+                position: absolute;
+                text-align: justify;
+                left: 5%;
+                top: 20%;
+                padding: $spacing-small;
+                width: 60%;
+                color: $text-color;
+                font-family: $font-principal;
+                font-size: $text-small;
+            }
+            &__btn{
+                position: absolute;
+                padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+                border-radius: 20px;
+                border-color: $text-color;
+                color: $text-color;
+                background-color: $color-primary;
+                font-family: $font-principal;
+                font-size: $text-small;
+                font-weight: bolder;
+                text-align: center;
+                top: 84%;
+                left: 20%;
+                transform: translate(-50%, -50%);
+            }
+            &__img{
+                z-index: -1;
+            }
+    }
+    
+      /* ARTICULOS DESTACADOS */
+    .destacados {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .destacados>div{
+        width: 50%;
+    }
+
+}

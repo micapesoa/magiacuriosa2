@@ -1,0 +1,133 @@
+/*--------BANNER--------*/
+
+.banner{
+    position: relative;
+    display: inline-block;
+    text-align: left;
+        &__bienvenida {
+            font-size: $text-large;
+            color: $color-secondary;
+            position: absolute;
+            left: 5%;
+            top: 15%;
+            font-family: $font-principal;
+            animation-name: bienvenida;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            }
+        &__descripcion {
+            position: absolute;
+            left: 5%;
+            top: 40%;
+            width: 50%;
+            color: $text-color;
+            font-family: $font-principal;
+            font-size: $text-small;
+            text-align: justify;
+        }
+        &__btn{
+            position: absolute;
+            left: 20%;
+            top: 73%;
+            padding: 0.8rem 2rem 0.8rem 2rem;
+            border-radius: 20px;
+            border-color: $text-color;
+            color: $text-color;
+            background-color: $color-primary;
+            font-family: $font-principal;
+            font-weight: bolder;
+            text-align: center;
+            transition: background ease-in .3s;
+            font-size: $text-base;
+            &:hover {
+                background: #ec4c73;
+            }
+        }
+        &__img{
+            z-index: -1;
+            min-height: 100vh;
+            max-height: 100%;
+        }
+}
+
+    @keyframes bienvenida {
+        0%   {color: #a10c32;}
+        15%  {color: #644454;}
+        30%  {color: #a10c32;}
+        45%  {color: #ec4c73;}
+        60% {color: #ff94af;}
+        75%  {color: #ff84a3;}
+        90%  {color: #ec4c73;}
+        100%   {color: #a10c32;}
+      }
+      
+/* ----------ARTICULOS BLOG HOME---------- */
+
+.destacados{
+    display:grid;
+    grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "articulo1 articulo2 articulo3 articulo4";
+    gap: $spacing-large;
+    justify-content: center;
+    padding: $spacing-small;
+    margin: $spacing-medium;
+        &__titulo{
+            display: grid;
+            grid-area: titulo;
+            padding: $spacing-small;
+            text-align: center;
+            color: $text-color;
+            font-size: $text-large;
+            font-family: $font-principal;
+            font-weight:bolder;
+        }
+}
+
+.destacados__articulo{
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xsmall;
+    flex: 1 1 clamp(300px, 30%, 400px);
+    &--info{
+        display: flex;
+        flex-direction: column;
+        padding: $spacing-small;
+    }
+    &--titulo{
+        font-family: $font-principal;
+        text-align: center;
+        font-size: $text-medium;
+        color: $text-color;
+        font-weight: bolder;
+    }
+    &--subtitulo{
+        font-family: $font-principal;
+        text-align: left;
+        color: $text-color;
+        font-size: 14px;
+        margin-top: 0.8rem;
+    }
+    &--leer{
+        font-family: $font-principal;
+        text-align: center;
+        color: $color-secondary;
+        font-size: $text-small;
+        margin-top: 1rem;
+        font-weight: bolder;
+        text-decoration: none;
+    
+        &:nth-last-of-type(1){
+            grid-area: articulo1;
+        }
+        &:nth-last-of-type(2){
+            grid-area: articulo2;
+        }
+        &:nth-last-of-type(3){
+            grid-area: articulo3;
+        }
+        &:nth-last-of-type(4){
+            grid-area: articulo4;
+        }
+    }   
+}

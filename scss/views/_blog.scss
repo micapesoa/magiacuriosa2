@@ -1,0 +1,28 @@
+/* --------BLOG-------- */
+
+.section__blog{
+    font-family: $font-principal;
+    color: $text-color;
+}
+
+.section__introduccion{
+    font-size: $text-base;
+    justify-content: center;
+    text-align: justify;
+}
+
+.section__articulo{
+    margin-top: $spacing-medium;
+    &--titulo{
+        font-size: $text-medium;
+    }
+    &--resumen{
+        font-size: $text-base;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    &--leer{
+        font-size: $text-small;
+        color: $color-secondary;
+        }
+}
