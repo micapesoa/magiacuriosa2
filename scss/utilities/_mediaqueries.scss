@@ -30,15 +30,15 @@
         display: inline-block;
         text-align: center;
         &__bienvenida {
-            font-size: $text-medium;
+            font-size: $text-xmedium;
             color: $color-secondary;
             position: absolute;
             text-align: center;
             font-family: $font-principal;
-            left: 30%;
+            left: 20%;
             right: 20%;
             top: 10%;
-            width: 40%;
+            width: 60%;
             }
         &__descripcion {
             position: absolute;
@@ -86,24 +86,21 @@
 
 /* 
     /* SISTEMAS */
-    .section__sistemas{
+    .sistemas{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        padding-bottom: 2rem;
-        margin-bottom: 3rem;
+        &__articulo{
+            padding-bottom: 3rem;
+            margin-bottom: 3rem;
+            &--titulo {
+                font-size:medium;
+                padding-bottom: 3rem;
+                margin-bottom: 1rem;
+            } 
+        }
     }
 
-    .sistemas__articulo{
-        padding-bottom: 3rem;
-        margin-bottom: 3rem;
-    }
-
-    .sistemas__subtitulo {
-        font-size:medium;
-        padding-bottom: 3rem;
-        margin-bottom: 1rem;
-    } 
 
     /* FOOTER */
     .footer {
@@ -149,7 +146,12 @@
 
 }
 
-
+/* BIENVENIDA - CAMBIO TAMAÑO TITULO MOBILE S */
+@media screen and (max-width:335px){
+    .banner__bienvenida {
+            font-size: $text-medium;
+}
+}
 
 /*---------------------------- -----Tablet------------------------------- */
 @media screen and (min-width: 481px) and (max-width: 978px) {
@@ -219,5 +221,6 @@
     .destacados>div{
         width: 50%;
     }
+
 
 }

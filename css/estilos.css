@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* VAR/NORM */
 /* Colors */
 /* Spacings */
 /* Font family */
@@ -17,6 +19,7 @@ html {
 img {
   width: 100%; }
 
+/* MISC */
 /* --------FOOTER-------- */
 .footer {
   line-height: 1.8em; }
@@ -32,170 +35,7 @@ img {
   color: #644454;
   font-weight: bolder; }
 
-/* -----------------------------------MQ---------------------------------- */
-/* ---------------------------------Mobile-------------------------------- */
-@media screen and (max-width: 480px) {
-  /* HEADER */
-  .header {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    vertical-align: center;
-    font-size: 0.8em; }
-    .header__logo {
-      max-width: 150px;
-      text-align: center; }
-    .header__navbar--principal li {
-      display: block;
-      padding: 1rem;
-      text-align: center; }
-  /* BANNER */
-  .banner {
-    position: relative;
-    display: inline-block;
-    text-align: center; }
-    .banner__bienvenida {
-      font-size: 2.2em;
-      color: #ec4c73;
-      position: absolute;
-      text-align: center;
-      font-family: "Nunito", sans-serif;
-      left: 30%;
-      right: 20%;
-      top: 10%;
-      width: 40%; }
-    .banner__descripcion {
-      position: absolute;
-      left: 10%;
-      top: 25%;
-      padding: 2rem;
-      width: 80%;
-      color: #644454;
-      font-family: "Nunito", sans-serif;
-      font-size: 1.4em;
-      text-align: justify; }
-    .banner__btn {
-      position: absolute;
-      padding: 0.8rem 2rem 0.8rem 2rem;
-      border-radius: 20px;
-      border-color: #644454;
-      color: #644454;
-      background-color: #FFFFFF;
-      font-family: "Nunito", sans-serif;
-      font-weight: bolder;
-      text-align: center;
-      font-size: 1.4em;
-      top: 70%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
-    .banner__img {
-      z-index: -1;
-      height: 70rem; }
-  /* ARTICULOS */
-  .destacados {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; }
-    .destacados__titulo {
-      font-size: 2.4rem; }
-  /* 
-    /* SISTEMAS */
-  .section__sistemas {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-bottom: 2rem;
-    margin-bottom: 3rem; }
-  .sistemas__articulo {
-    padding-bottom: 3rem;
-    margin-bottom: 3rem; }
-  .sistemas__subtitulo {
-    font-size: medium;
-    padding-bottom: 3rem;
-    margin-bottom: 1rem; }
-  /* FOOTER */
-  .footer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center; }
-    .footer__contactanos {
-      width: 100%;
-      padding: 4rem 5rem 1rem 5rem; }
-    .footer__social {
-      width: 100%;
-      padding: 2rem 5rem 2rem 5rem; }
-    .footer__newsletter {
-      width: 100%;
-      padding: 1rem 5rem 4rem 5rem; }
-    .footer__newsletter--input {
-      height: 2rem;
-      width: 18rem; }
-  /* TERAPIA FLORAL */
-  .terapia__gotero--btn {
-    font-size: 1em; }
-  .terapia__sesion--btn {
-    font-size: 1em; }
-  /* MAIN TITULOS PAG */
-  .main__titulo {
-    padding-left: 2em; } }
-
-/*---------------------------- -----Tablet------------------------------- */
-@media screen and (min-width: 481px) and (max-width: 978px) {
-  /* HEADER */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.8em; }
-  /* BANNER */
-  .banner {
-    position: relative;
-    display: inline-block;
-    text-align: center; }
-    .banner__bienvenida {
-      font-size: 2.2em;
-      color: #ec4c73;
-      position: absolute;
-      text-align: left;
-      font-family: "Nunito", sans-serif;
-      left: 10%;
-      right: 20%;
-      top: 10%;
-      width: 90%; }
-    .banner__descripcion {
-      position: absolute;
-      text-align: justify;
-      left: 5%;
-      top: 20%;
-      padding: 2rem;
-      width: 60%;
-      color: #644454;
-      font-family: "Nunito", sans-serif;
-      font-size: 1.4em; }
-    .banner__btn {
-      position: absolute;
-      padding: 0.6rem 1.5rem 0.6rem 1.5rem;
-      border-radius: 20px;
-      border-color: #644454;
-      color: #644454;
-      background-color: #FFFFFF;
-      font-family: "Nunito", sans-serif;
-      font-size: 1.4em;
-      font-weight: bolder;
-      text-align: center;
-      top: 84%;
-      left: 20%;
-      transform: translate(-50%, -50%); }
-    .banner__img {
-      z-index: -1; }
-  /* ARTICULOS DESTACADOS */
-  .destacados {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-  .destacados > div {
-    width: 50%; } }
-
+/* VIEWS */
 /* --------BLOG-------- */
 .section__blog {
   font-family: "Nunito", sans-serif;
@@ -307,15 +147,15 @@ img {
   15% {
     color: #644454; }
   30% {
-    color: #a10c32; }
+    color: #bd3355; }
   45% {
-    color: #ec4c73; }
+    color: #ee6c8d; }
   60% {
-    color: #ff94af; }
+    color: #f58da7; }
   75% {
-    color: #ff84a3; }
+    color: #ee6c8d; }
   90% {
-    color: #ec4c73; }
+    color: #bd3355; }
   100% {
     color: #a10c32; } }
 
@@ -333,47 +173,46 @@ img {
     padding: 2rem;
     text-align: center;
     color: #644454;
-    font-size: 5.2em;
+    font-size: 3.1em;
     font-family: "Nunito", sans-serif;
     font-weight: bolder; }
-
-.destacados__articulo {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  flex: 1 1 clamp(300px, 30%, 400px); }
-  .destacados__articulo--info {
+  .destacados__articulo {
     display: flex;
     flex-direction: column;
-    padding: 2rem; }
-  .destacados__articulo--titulo {
-    font-family: "Nunito", sans-serif;
-    text-align: center;
-    font-size: 2.2em;
-    color: #644454;
-    font-weight: bolder; }
-  .destacados__articulo--subtitulo {
-    font-family: "Nunito", sans-serif;
-    text-align: left;
-    color: #644454;
-    font-size: 14px;
-    margin-top: 0.8rem; }
-  .destacados__articulo--leer {
-    font-family: "Nunito", sans-serif;
-    text-align: center;
-    color: #ec4c73;
-    font-size: 1.4em;
-    margin-top: 1rem;
-    font-weight: bolder;
-    text-decoration: none; }
-    .destacados__articulo--leer:nth-last-of-type(1) {
-      grid-area: articulo1; }
-    .destacados__articulo--leer:nth-last-of-type(2) {
-      grid-area: articulo2; }
-    .destacados__articulo--leer:nth-last-of-type(3) {
-      grid-area: articulo3; }
-    .destacados__articulo--leer:nth-last-of-type(4) {
-      grid-area: articulo4; }
+    gap: 1rem;
+    flex: 1 1 clamp(300px, 30%, 400px); }
+    .destacados__articulo--info {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem; }
+    .destacados__articulo--titulo {
+      font-family: "Nunito", sans-serif;
+      text-align: center;
+      font-size: 2.2em;
+      color: #644454;
+      font-weight: bolder; }
+    .destacados__articulo--subtitulo {
+      font-family: "Nunito", sans-serif;
+      text-align: left;
+      color: #644454;
+      font-size: 14px;
+      margin-top: 0.8rem; }
+    .destacados__articulo--leer {
+      font-family: "Nunito", sans-serif;
+      text-align: center;
+      color: #ec4c73;
+      font-size: 1.4em;
+      margin-top: 1rem;
+      font-weight: bolder;
+      text-decoration: none; }
+      .destacados__articulo--leer:nth-last-of-type(1) {
+        grid-area: articulo1; }
+      .destacados__articulo--leer:nth-last-of-type(2) {
+        grid-area: articulo2; }
+      .destacados__articulo--leer:nth-last-of-type(3) {
+        grid-area: articulo3; }
+      .destacados__articulo--leer:nth-last-of-type(4) {
+        grid-area: articulo4; }
 
 /* --------NOSOTROS-------- */
 .nosotros__texto {
@@ -426,7 +265,8 @@ img {
   gap: 6rem;
   justify-content: center;
   padding: 2rem;
-  margin: 2.4rem; }
+  margin: 2.4rem;
+  height: fit-content; }
   .sistemas__titulo {
     display: grid;
     grid-area: titulo;
@@ -451,8 +291,7 @@ img {
       font-weight: bolder;
       font-size: 1.4em;
       color: #644454;
-      text-decoration: none;
-      padding: 2rem; }
+      text-decoration: none; }
     .sistemas__articulo:nth-last-of-type(1) {
       grid-area: articulo1; }
     .sistemas__articulo:nth-last-of-type(2) {
@@ -461,3 +300,171 @@ img {
       grid-area: articulo3; }
     .sistemas__articulo:nth-last-of-type(4) {
       grid-area: articulo4; }
+
+/* UTILITIES */
+/* -----------------------------------MQ---------------------------------- */
+/* ---------------------------------Mobile-------------------------------- */
+@media screen and (max-width: 480px) {
+  /* HEADER */
+  .header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    vertical-align: center;
+    font-size: 0.8em; }
+    .header__logo {
+      max-width: 150px;
+      text-align: center; }
+    .header__navbar--principal li {
+      display: block;
+      padding: 1rem;
+      text-align: center; }
+  /* BANNER */
+  .banner {
+    position: relative;
+    display: inline-block;
+    text-align: center; }
+    .banner__bienvenida {
+      font-size: 3.1em;
+      color: #ec4c73;
+      position: absolute;
+      text-align: center;
+      font-family: "Nunito", sans-serif;
+      left: 20%;
+      right: 20%;
+      top: 10%;
+      width: 60%; }
+    .banner__descripcion {
+      position: absolute;
+      left: 10%;
+      top: 25%;
+      padding: 2rem;
+      width: 80%;
+      color: #644454;
+      font-family: "Nunito", sans-serif;
+      font-size: 1.4em;
+      text-align: justify; }
+    .banner__btn {
+      position: absolute;
+      padding: 0.8rem 2rem 0.8rem 2rem;
+      border-radius: 20px;
+      border-color: #644454;
+      color: #644454;
+      background-color: #FFFFFF;
+      font-family: "Nunito", sans-serif;
+      font-weight: bolder;
+      text-align: center;
+      font-size: 1.4em;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .banner__img {
+      z-index: -1;
+      height: 70rem; }
+  /* ARTICULOS */
+  .destacados {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .destacados__titulo {
+      font-size: 2.4rem; }
+  /* 
+    /* SISTEMAS */
+  .sistemas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .sistemas__articulo {
+      padding-bottom: 3rem;
+      margin-bottom: 3rem; }
+      .sistemas__articulo--titulo {
+        font-size: medium;
+        padding-bottom: 3rem;
+        margin-bottom: 1rem; }
+  /* FOOTER */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center; }
+    .footer__contactanos {
+      width: 100%;
+      padding: 4rem 5rem 1rem 5rem; }
+    .footer__social {
+      width: 100%;
+      padding: 2rem 5rem 2rem 5rem; }
+    .footer__newsletter {
+      width: 100%;
+      padding: 1rem 5rem 4rem 5rem; }
+    .footer__newsletter--input {
+      height: 2rem;
+      width: 18rem; }
+  /* TERAPIA FLORAL */
+  .terapia__gotero--btn {
+    font-size: 1em; }
+  .terapia__sesion--btn {
+    font-size: 1em; }
+  /* MAIN TITULOS PAG */
+  .main__titulo {
+    padding-left: 2em; } }
+
+/* BIENVENIDA - CAMBIO TAMAÑO TITULO MOBILE S */
+@media screen and (max-width: 335px) {
+  .banner__bienvenida {
+    font-size: 2.2em; } }
+
+/*---------------------------- -----Tablet------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 978px) {
+  /* HEADER */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em; }
+  /* BANNER */
+  .banner {
+    position: relative;
+    display: inline-block;
+    text-align: center; }
+    .banner__bienvenida {
+      font-size: 2.2em;
+      color: #ec4c73;
+      position: absolute;
+      text-align: left;
+      font-family: "Nunito", sans-serif;
+      left: 10%;
+      right: 20%;
+      top: 10%;
+      width: 90%; }
+    .banner__descripcion {
+      position: absolute;
+      text-align: justify;
+      left: 5%;
+      top: 20%;
+      padding: 2rem;
+      width: 60%;
+      color: #644454;
+      font-family: "Nunito", sans-serif;
+      font-size: 1.4em; }
+    .banner__btn {
+      position: absolute;
+      padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+      border-radius: 20px;
+      border-color: #644454;
+      color: #644454;
+      background-color: #FFFFFF;
+      font-family: "Nunito", sans-serif;
+      font-size: 1.4em;
+      font-weight: bolder;
+      text-align: center;
+      top: 84%;
+      left: 20%;
+      transform: translate(-50%, -50%); }
+    .banner__img {
+      z-index: -1; }
+  /* ARTICULOS DESTACADOS */
+  .destacados {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .destacados > div {
+    width: 50%; } }

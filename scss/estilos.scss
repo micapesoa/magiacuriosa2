@@ -1,12 +1,17 @@
+/* VAR/NORM */
 @import "utilities/variables";
 @import "base/reset"; 
 
-@import "components/footer";
+/* MISC */
+@import "layout/footer";
 @import "components/maintitle";
-@import "components/mediaqueries";
 
+/* VIEWS */
 @import "views/blog";
 @import "views/contacto";
 @import "views/home";
 @import "views/nosotros";
 @import "views/terapiafloral";
+
+/* UTILITIES */
+@import "utilities/mediaqueries";

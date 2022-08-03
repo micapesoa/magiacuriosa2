@@ -49,6 +49,7 @@
     justify-content: center;
     padding: $spacing-small;
     margin: $spacing-medium;
+    height: fit-content;
     &__titulo{
         display: grid;
         grid-area: titulo;
@@ -76,7 +77,6 @@
             font-size:$text-small;
             color: $text-color;
             text-decoration: none;
-            padding: $spacing-small;
         }
         &:nth-last-of-type(1){
             grid-area: articulo1;
