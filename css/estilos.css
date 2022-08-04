@@ -37,10 +37,6 @@ img {
 
 /* VIEWS */
 /* --------BLOG-------- */
-.section__blog {
-  font-family: "Nunito", sans-serif;
-  color: #644454; }
-
 .section__introduccion {
   font-size: 1.6em;
   justify-content: center;
@@ -63,9 +59,7 @@ img {
   background: linear-gradient(to top, #ec4c746e, #ffffff); }
 
 .contacto__medios {
-  font-family: "Nunito", sans-serif;
-  font-size: 2.2em;
-  color: #644454; }
+  font-size: 2.2em; }
 
 .contacto__redes {
   font-family: "Nunito", sans-serif;
@@ -77,9 +71,7 @@ img {
     color: #ec4c73; }
 
 .contacto__formulario {
-  font-family: "Nunito", sans-serif;
-  font-size: 1.6em;
-  color: #644454; }
+  font-size: 1.6em; }
   .contacto__formulario--titulo {
     font-weight: bolder;
     color: #644454;
@@ -88,8 +80,6 @@ img {
 .contacto__mensaje--btn {
   margin-top: 2rem;
   padding: 0.5rem 1rem;
-  color: #644454;
-  font-family: "Nunito", sans-serif;
   font-size: 1em;
   font-weight: bolder;
   background-color: #FFFFFF;
@@ -160,21 +150,24 @@ img {
     color: #a10c32; } }
 
 /* ----------ARTICULOS BLOG HOME---------- */
+.textbasic, .section__blog, .contacto__medios, .contacto__formulario, .contacto__mensaje--btn, .destacados__titulo, .destacados__articulo--titulo, .destacados__articulo--subtitulo, .sistemas__titulo, .sistemas__articulo--titulo {
+  font-family: "Nunito", sans-serif;
+  color: #644454; }
+
 .destacados {
   display: grid;
   grid-template-areas: "titulo titulo titulo titulo" "articulo1 articulo2 articulo3 articulo4";
   gap: 6rem;
   justify-content: center;
   padding: 2rem;
-  margin: 2.4rem; }
+  margin: 2.4rem;
+  width: fit-content; }
   .destacados__titulo {
     display: grid;
     grid-area: titulo;
     padding: 2rem;
     text-align: center;
-    color: #644454;
     font-size: 3.1em;
-    font-family: "Nunito", sans-serif;
     font-weight: bolder; }
   .destacados__articulo {
     display: flex;
@@ -186,15 +179,11 @@ img {
       flex-direction: column;
       padding: 2rem; }
     .destacados__articulo--titulo {
-      font-family: "Nunito", sans-serif;
       text-align: center;
       font-size: 2.2em;
-      color: #644454;
       font-weight: bolder; }
     .destacados__articulo--subtitulo {
-      font-family: "Nunito", sans-serif;
       text-align: left;
-      color: #644454;
       font-size: 14px;
       margin-top: 0.8rem; }
     .destacados__articulo--leer {
@@ -215,7 +204,7 @@ img {
         grid-area: articulo4; }
 
 /* --------NOSOTROS-------- */
-.nosotros__texto {
+.nosotros__texto, .terapia__texto {
   font-family: "Nunito", sans-serif;
   font-size: 1.6em;
   text-align: justify;
@@ -225,17 +214,18 @@ img {
 
 /* ----------TERAPIA FLORAL--------- */
 .terapia__texto {
-  font-family: "Nunito", sans-serif;
-  font-size: 1.4em;
-  text-align: justify;
-  padding: 5rem;
-  height: fit-content; }
+  margin: 0;
+  padding: 15px 60px 15px 60px; }
+  .terapia__texto:nth-last-of-type(1) {
+    padding-bottom: 50px; }
+  .terapia__texto:nth-last-of-type(4) {
+    padding-top: 50px; }
 
 .terapia__ubicacion {
   display: grid;
   grid-template-areas: "boton1 boton2"; }
 
-.terapia__gotero--btn {
+.terapia__gotero--btn, .terapia__sesion--btn {
   grid-area: boton1;
   padding: 0.8rem 2rem 0.8rem 2rem;
   border-radius: 20px;
@@ -248,16 +238,7 @@ img {
   font-size: 1.6em; }
 
 .terapia__sesion--btn {
-  grid-area: boton2;
-  padding: 0.8rem 2rem 0.8rem 2rem;
-  border-radius: 20px;
-  border-color: #644454;
-  color: #FFFFFF;
-  background-color: #ec4c73;
-  font-family: "Nunito", sans-serif;
-  font-weight: bolder;
-  margin: auto;
-  font-size: 1.6em; }
+  grid-area: boton2; }
 
 .sistemas {
   display: grid;
@@ -272,9 +253,7 @@ img {
     grid-area: titulo;
     padding: 2rem;
     text-align: center;
-    color: #644454;
     font-size: 2.2em;
-    font-family: "Nunito", sans-serif;
     font-weight: bolder; }
   .sistemas__articulo {
     display: flex;
@@ -286,11 +265,9 @@ img {
       flex-direction: column;
       padding: 2rem; }
     .sistemas__articulo--titulo {
-      font-family: "Nunito", sans-serif;
       text-align: center;
       font-weight: bolder;
       font-size: 1.4em;
-      color: #644454;
       text-decoration: none; }
     .sistemas__articulo:nth-last-of-type(1) {
       grid-area: articulo1; }
@@ -400,7 +377,7 @@ img {
       height: 2rem;
       width: 18rem; }
   /* TERAPIA FLORAL */
-  .terapia__gotero--btn {
+  .terapia__gotero--btn, .terapia__sesion--btn {
     font-size: 1em; }
   .terapia__sesion--btn {
     font-size: 1em; }

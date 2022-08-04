@@ -63,6 +63,11 @@
       
 /* ----------ARTICULOS BLOG HOME---------- */
 
+.textbasic {
+    font-family: $font-principal;
+    color: $text-color;
+}
+
 .destacados{
     display:grid;
     grid-template-areas: 
@@ -72,15 +77,15 @@
     justify-content: center;
     padding: $spacing-small;
     margin: $spacing-medium;
+    width: fit-content;
         &__titulo{
             display: grid;
             grid-area: titulo;
             padding: $spacing-small;
             text-align: center;
-            color: $text-color;
             font-size: $text-xmedium;
-            font-family: $font-principal;
             font-weight:bolder;
+            @extend .textbasic;
         }
         &__articulo{
             display: flex;
@@ -93,16 +98,15 @@
                 padding: $spacing-small;
             }
             &--titulo{
-                font-family: $font-principal;
+                @extend .textbasic;
                 text-align: center;
                 font-size: $text-medium;
-                color: $text-color;
                 font-weight: bolder;
             }
             &--subtitulo{
-                font-family: $font-principal;
+                @extend .textbasic;
                 text-align: left;
-                color: $text-color;
+
                 font-size: 14px;
                 margin-top: 0.8rem;
             }

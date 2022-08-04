@@ -1,11 +1,16 @@
 /* ----------TERAPIA FLORAL--------- */
 
 .terapia__texto {
-    font-family: $font-principal;
-    font-size: $text-small;
-    text-align: justify;
-    padding: 5rem;
-    height: fit-content;
+@extend .nosotros__texto;
+margin: 0;
+padding: 15px 60px 15px 60px;
+    &:nth-last-of-type(1){
+        padding-bottom: 50px;
+    }
+
+    &:nth-last-of-type(4){
+        padding-top: 50px;
+    }
 }
 
 .terapia__ubicacion{
@@ -28,15 +33,7 @@
 
 .terapia__sesion--btn{
     grid-area: boton2;
-    padding: 0.8rem 2rem 0.8rem 2rem;
-    border-radius: 20px;
-    border-color: $text-color;
-    color:$color-primary;
-    background-color:$color-secondary;
-    font-family: $font-principal;
-    font-weight: bolder;    
-    margin: auto;
-    font-size: $text-base;
+    @extend .terapia__gotero--btn;
 }
 
 
@@ -55,9 +52,8 @@
         grid-area: titulo;
         padding: $spacing-small;
         text-align: center;
-        color:$text-color;
+        @extend .textbasic;
         font-size: $text-medium;
-        font-family: $font-principal;
         font-weight:bolder;
     }
     &__articulo{
@@ -71,11 +67,10 @@
             padding: $spacing-small;
         }
         &--titulo{
-            font-family: $font-principal;
+            @extend .textbasic;
             text-align: center;
             font-weight: bolder;
             font-size:$text-small;
-            color: $text-color;
             text-decoration: none;
         }
         &:nth-last-of-type(1){

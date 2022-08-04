@@ -1,8 +1,7 @@
 /* --------BLOG-------- */
 
 .section__blog{
-    font-family: $font-principal;
-    color: $text-color;
+    @extend .textbasic;
 }
 
 .section__introduccion{
