@@ -48,8 +48,9 @@
         }
         &__img{
             z-index: -1;
-/*             min-height: 100vh; */
-            max-height: 100%;
+            &--2{
+            display: none;
+            }
         }
 }
 

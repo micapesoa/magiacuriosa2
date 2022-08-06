@@ -4,19 +4,7 @@
 
 /* ---------------------------------Mobile-------------------------------- */
 
-/* BIENVENIDA - CAMBIO TAMAÑO TITULO - MARGEN TERAPIAS -> MOBILE S */
-@media screen and (max-width:335px){
-    .banner__bienvenida {
-            font-size: $text-medium;
-    }
 
-    /* SISTEMAS */
-    .sistemas{
-        margin: 16px;
-        padding: 10px;
-
-    }
-   }
 
 @media screen and (max-width:480px){
     /* HEADER */
@@ -51,15 +39,15 @@
             font-family: $font-principal;
             left: 20%;
             right: 20%;
-            top: 10%;
+            top: 7%;
             width: 60%;
             }
         &__descripcion {
             position: absolute;
-            left: 10%;
-            top: 25%;
+            left: 15%;
+            top: 17%;
             padding: $spacing-small;
-            width: 80%;
+            width: 70%;
             color: $text-color;
             font-family: $font-principal;
             font-size: $text-small;
@@ -83,6 +71,13 @@
         &__img{
             z-index: -1;
             height: 70rem;
+            &--1{
+                display: none;
+            }
+            &--2{
+                display: block;
+                width: 100%;
+            }
         }
     }
     
@@ -164,6 +159,19 @@
 }
 
 
+/* BIENVENIDA - CAMBIO TAMAÑO TITULO - MARGEN TERAPIAS -> MOBILE S */
+@media screen and (max-width:335px){
+    .banner__bienvenida{
+        font-size: $text-medium;
+    }
+
+    /* SISTEMAS */
+    .sistemas{
+        margin: 16px;
+        padding: 10px;
+
+    }
+   }
 
 /*---------------------------- -----Tablet------------------------------- */
 @media screen and (min-width: 481px) and (max-width: 978px) {

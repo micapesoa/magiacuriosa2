@@ -161,9 +161,9 @@ a {
       background: #ec4c73;
       color: #FFFFFF; }
   .banner__img {
-    z-index: -1;
-    /*             min-height: 100vh; */
-    max-height: 100%; }
+    z-index: -1; }
+    .banner__img--2 {
+      display: none; }
 
 @keyframes bienvenida {
   0% {
@@ -322,15 +322,6 @@ a {
 /* UTILITIES */
 /* -----------------------------------MQ---------------------------------- */
 /* ---------------------------------Mobile-------------------------------- */
-/* BIENVENIDA - CAMBIO TAMAÑO TITULO - MARGEN TERAPIAS -> MOBILE S */
-@media screen and (max-width: 335px) {
-  .banner__bienvenida {
-    font-size: 2.2em; }
-  /* SISTEMAS */
-  .sistemas {
-    margin: 16px;
-    padding: 10px; } }
-
 @media screen and (max-width: 480px) {
   /* HEADER */
   .header {
@@ -359,14 +350,14 @@ a {
       font-family: "Nunito", sans-serif;
       left: 20%;
       right: 20%;
-      top: 10%;
+      top: 7%;
       width: 60%; }
     .banner__descripcion {
       position: absolute;
-      left: 10%;
-      top: 25%;
+      left: 15%;
+      top: 17%;
       padding: 2rem;
-      width: 80%;
+      width: 70%;
       color: #644454;
       font-family: "Nunito", sans-serif;
       font-size: 1.4em;
@@ -388,6 +379,11 @@ a {
     .banner__img {
       z-index: -1;
       height: 70rem; }
+      .banner__img--1 {
+        display: none; }
+      .banner__img--2 {
+        display: block;
+        width: 100%; }
   /* ARTICULOS */
   .destacados {
     display: flex;
@@ -436,6 +432,15 @@ a {
   /* MAIN TITULOS PAG */
   .main__titulo {
     padding-left: 2em; } }
+
+/* BIENVENIDA - CAMBIO TAMAÑO TITULO - MARGEN TERAPIAS -> MOBILE S */
+@media screen and (max-width: 335px) {
+  .banner__bienvenida {
+    font-size: 2.2em; }
+  /* SISTEMAS */
+  .sistemas {
+    margin: 16px;
+    padding: 10px; } }
 
 /*---------------------------- -----Tablet------------------------------- */
 @media screen and (min-width: 481px) and (max-width: 978px) {
