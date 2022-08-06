@@ -23,5 +23,41 @@
     &--leer{
         font-size: $text-small;
         color: $color-secondary;
+        &:hover {
+            text-decoration: underline;
         }
+        }
+        
+}
+
+.section__siguientes{
+    font-family:  $font-principal;
+    font-size: $text-base;
+    text-align: center;
+    padding: 3rem 1rem 1rem 1rem;
+    text-decoration: none;
+    font-weight: bolder;
+    &--num{
+        padding-left: 1rem;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &--sig{
+        padding-left: 3rem;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+}
+
+a {
+    text-decoration: none;
+    color: $color-secondary;
+    &:hover {
+        color: $color-secondary;
+        text-decoration: underline;
+    }
+
 }

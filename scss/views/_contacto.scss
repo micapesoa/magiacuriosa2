@@ -45,4 +45,8 @@
     background-color: $color-primary;
     border-radius: 20px;
     border-color: $text-color;
+    &:hover {
+        background: #ec4c73;
+        color: $color-primary;
+    }
 }

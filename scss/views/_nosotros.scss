@@ -1,10 +1,12 @@
 /* --------NOSOTROS-------- */
 
-.nosotros__texto{
+.nosotros{ 
+    padding: 5rem;
+&__texto{
     font-family: $font-principal;
     font-size: $text-base;
     text-align: justify;
-    padding: 5rem;
     height: fit-content;
     color: $text-color;
+}
 }

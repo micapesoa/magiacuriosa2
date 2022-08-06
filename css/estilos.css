@@ -53,6 +53,31 @@ img {
   .section__articulo--leer {
     font-size: 1.4em;
     color: #ec4c73; }
+    .section__articulo--leer:hover {
+      text-decoration: underline; }
+
+.section__siguientes {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6em;
+  text-align: center;
+  padding: 3rem 1rem 1rem 1rem;
+  text-decoration: none;
+  font-weight: bolder; }
+  .section__siguientes--num {
+    padding-left: 1rem; }
+    .section__siguientes--num:hover {
+      text-decoration: underline; }
+  .section__siguientes--sig {
+    padding-left: 3rem; }
+    .section__siguientes--sig:hover {
+      text-decoration: underline; }
+
+a {
+  text-decoration: none;
+  color: #ec4c73; }
+  a:hover {
+    color: #ec4c73;
+    text-decoration: underline; }
 
 /* ---------CONTACTO--------- */
 .body__contacto {
@@ -88,6 +113,9 @@ img {
   background-color: #FFFFFF;
   border-radius: 20px;
   border-color: #644454; }
+  .contacto__mensaje--btn:hover {
+    background: #ec4c73;
+    color: #FFFFFF; }
 
 /*--------BANNER--------*/
 .banner {
@@ -97,6 +125,7 @@ img {
   .banner__bienvenida {
     font-size: 5.2em;
     color: #ec4c73;
+    font-weight: bolder;
     position: absolute;
     left: 5%;
     top: 15%;
@@ -111,8 +140,9 @@ img {
     width: 50%;
     color: #644454;
     font-family: "Nunito", sans-serif;
-    font-size: 1.4em;
-    text-align: justify; }
+    font-size: 1.6em;
+    text-align: justify;
+    font-weight: bolder; }
   .banner__btn {
     position: absolute;
     left: 20%;
@@ -128,29 +158,30 @@ img {
     transition: background ease-in .3s;
     font-size: 1.6em; }
     .banner__btn:hover {
-      background: #ec4c73; }
+      background: #ec4c73;
+      color: #FFFFFF; }
   .banner__img {
     z-index: -1;
-    min-height: 100vh;
+    /*             min-height: 100vh; */
     max-height: 100%; }
 
 @keyframes bienvenida {
   0% {
-    color: #a10c32; }
+    color: #6f336f; }
   15% {
     color: #644454; }
   30% {
-    color: #bd3355; }
+    color: #a25093; }
   45% {
     color: #ee6c8d; }
   60% {
-    color: #f58da7; }
+    color: #eb94aa; }
   75% {
-    color: #ee6c8d; }
+    color: #ec6889; }
   90% {
-    color: #bd3355; }
+    color: #a25093; }
   100% {
-    color: #a10c32; } }
+    color: #6f336f; } }
 
 /* ----------ARTICULOS BLOG HOME---------- */
 .textbasic, .section__blog, .contacto__medios, .contacto__formulario, .contacto__mensaje--btn, .destacados__titulo, .destacados__articulo--titulo, .destacados__articulo--subtitulo, .sistemas__titulo, .sistemas__articulo--titulo {
@@ -198,6 +229,8 @@ img {
       margin-top: 1rem;
       font-weight: bolder;
       text-decoration: none; }
+      .destacados__articulo--leer:hover, .sistemas__articulo--leer:hover {
+        text-decoration: underline; }
       .destacados__articulo--leer:nth-last-of-type(1), .sistemas__articulo--leer:nth-last-of-type(1) {
         grid-area: articulo1; }
       .destacados__articulo--leer:nth-last-of-type(2), .sistemas__articulo--leer:nth-last-of-type(2) {
@@ -208,13 +241,14 @@ img {
         grid-area: articulo4; }
 
 /* --------NOSOTROS-------- */
-.nosotros__texto, .terapia__texto {
-  font-family: "Nunito", sans-serif;
-  font-size: 1.6em;
-  text-align: justify;
-  padding: 5rem;
-  height: fit-content;
-  color: #644454; }
+.nosotros {
+  padding: 5rem; }
+  .nosotros__texto, .terapia__texto {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.6em;
+    text-align: justify;
+    height: fit-content;
+    color: #644454; }
 
 /* ----------TERAPIA FLORAL--------- */
 .terapia__texto {
@@ -423,7 +457,7 @@ img {
       font-family: "Nunito", sans-serif;
       left: 10%;
       right: 20%;
-      top: 10%;
+      top: 13%;
       width: 90%; }
     .banner__descripcion {
       position: absolute;
@@ -431,10 +465,10 @@ img {
       left: 5%;
       top: 20%;
       padding: 2rem;
-      width: 60%;
+      width: 50%;
       color: #644454;
       font-family: "Nunito", sans-serif;
-      font-size: 1.4em; }
+      font-size: 1em; }
     .banner__btn {
       position: absolute;
       padding: 0.6rem 1.5rem 0.6rem 1.5rem;
@@ -443,10 +477,10 @@ img {
       color: #644454;
       background-color: #FFFFFF;
       font-family: "Nunito", sans-serif;
-      font-size: 1.4em;
+      font-size: 1em;
       font-weight: bolder;
       text-align: center;
-      top: 84%;
+      top: 82%;
       left: 20%;
       transform: translate(-50%, -50%); }
     .banner__img {

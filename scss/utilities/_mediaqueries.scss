@@ -189,7 +189,7 @@
             font-family: $font-principal;
             left: 10%;
             right: 20%;
-            top: 10%;
+            top: 13%;
             width: 90%;
             }
             &__descripcion {
@@ -198,10 +198,10 @@
                 left: 5%;
                 top: 20%;
                 padding: $spacing-small;
-                width: 60%;
+                width: 50%;
                 color: $text-color;
                 font-family: $font-principal;
-                font-size: $text-small;
+                font-size: $text-xsmall;
             }
             &__btn{
                 position: absolute;
@@ -211,10 +211,10 @@
                 color: $text-color;
                 background-color: $color-primary;
                 font-family: $font-principal;
-                font-size: $text-small;
+                font-size: $text-xsmall;
                 font-weight: bolder;
                 text-align: center;
-                top: 84%;
+                top: 82%;
                 left: 20%;
                 transform: translate(-50%, -50%);
             }
