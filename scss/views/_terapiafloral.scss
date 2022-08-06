@@ -47,10 +47,11 @@ padding: 15px 60px 15px 60px;
     padding: $spacing-small;
     margin: $spacing-medium;
     height: fit-content;
+    align-items: baseline;
     &__titulo{
         display: grid;
         grid-area: titulo;
-        padding: $spacing-small;
+        padding: 0 0 0 10px;
         text-align: center;
         @extend .textbasic;
         font-size: $text-medium;
@@ -59,7 +60,7 @@ padding: 15px 60px 15px 60px;
     &__articulo{
         display: flex;
         flex-direction: column;
-        gap: $spacing-xsmall;
+        grid-template-columns: 100%;
         flex: 1 1 clamp(300px, 30%, 400px);
         &--div{
             display: flex;
@@ -70,8 +71,12 @@ padding: 15px 60px 15px 60px;
             @extend .textbasic;
             text-align: center;
             font-weight: bolder;
-            font-size:$text-small;
+            font-size:$text-base;
             text-decoration: none;
+        }
+        &--leer{
+            @extend .destacados__articulo--leer;
+            margin-top: 0;
         }
         &:nth-last-of-type(1){
             grid-area: articulo1;

@@ -6,6 +6,10 @@
 
 }
 
+.contacto__titulo{
+    padding-bottom: 10px;
+}
+
 .contacto__medios{
     @extend .textbasic;
     font-size: $text-medium;
