@@ -64,7 +64,7 @@
             font-weight: bolder;
             text-align: center;
             font-size: $text-small;
-            top: 48%;
+            top: 55%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
@@ -113,7 +113,34 @@
             } 
         }
     }
+      
+    /* TERAPIA FLORAL */
+    
+    .terapia__gotero--btn{
+        font-size: $text-xsmall;
+        color: $color-primary;
+        background-color: $color-secondary;
+    }
+    
+    .terapia__sesion--btn{
+        font-size: $text-xsmall;
+    }
+    
+    /* CONTACTO */
 
+    .contacto__formulario{
+        padding-top: 32px;
+    }
+    .contacto__mensaje--btn{
+        font-size: $text-xxsmall;
+        color: $color-primary;
+        background-color: $color-secondary;
+    }
+
+    /* MAIN TITULOS PAG */
+    .main__titulo{
+        padding-left: 2em;
+    }
 
     /* FOOTER */
     .footer {
@@ -137,33 +164,7 @@
             height: 2rem;
             width: 18rem;
         }
-
-    
-    }
-        
-    /* TERAPIA FLORAL */
-    
-    .terapia__gotero--btn{
-        font-size: $text-xsmall;
-        color: $color-primary;
-        background-color: $color-secondary;
-    }
-    
-    .terapia__sesion--btn{
-        font-size: $text-xsmall;
-    }
-    
-    /* CONTACTO */
-
-    .contacto__mensaje--btn{
-        font-size: $text-xxsmall;
-        color: $color-primary;
-        background-color: $color-secondary;
-    }
-
-    /* MAIN TITULOS PAG */
-    .main__titulo{
-        padding-left: 2em;
+ 
     }
 
     /* LINKS */
@@ -226,7 +227,6 @@
             text-align: left;
             font-family: $font-principal;
             left: 8%;
-/*             right: 20%; */
             top: 13%;
             width: 90%;
             }
