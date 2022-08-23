@@ -64,7 +64,7 @@
             font-weight: bolder;
             text-align: center;
             font-size: $text-small;
-            top: 70%;
+            top: 48%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
@@ -87,6 +87,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        gap: $spacing-small;
         &__titulo {
             font-size: $spacing-medium;
         }
@@ -101,6 +102,7 @@
         align-items: center;
         padding: 16px;
         margin: 16px;
+        gap: $spacing-xsmall;
            &__articulo{
             padding: 10px;
             margin-bottom: 10px;
@@ -121,15 +123,15 @@
         text-align: center;
         &__contactanos{
             width: 100%;
-            padding: 4rem 5rem 1rem 5rem;
+            padding: 4rem 4rem 1rem 4rem;
         }
         &__social{
             width: 100%;
-            padding: 2rem 5rem 2rem 5rem;
+            padding: 1rem 4rem 1rem 4rem;
         }
         &__newsletter{
             width: 100%;
-            padding: 1rem 5rem 4rem 5rem;
+            padding: 1rem 4rem 4rem 4rem;
         }
         &__newsletter--input{
             height: 2rem;
@@ -143,17 +145,32 @@
     
     .terapia__gotero--btn{
         font-size: $text-xsmall;
+        color: $color-primary;
+        background-color: $color-secondary;
     }
     
     .terapia__sesion--btn{
         font-size: $text-xsmall;
     }
     
+    /* CONTACTO */
 
+    .contacto__mensaje--btn{
+        font-size: $text-xxsmall;
+        color: $color-primary;
+        background-color: $color-secondary;
+    }
 
     /* MAIN TITULOS PAG */
     .main__titulo{
         padding-left: 2em;
+    }
+
+    /* LINKS */
+
+    a:active {
+        text-decoration: underline;
+        color: #ec4c73;
     }
 
 }
@@ -161,15 +178,28 @@
 
 /* BIENVENIDA - CAMBIO TAMAÑO TITULO - MARGEN TERAPIAS -> MOBILE S */
 @media screen and (max-width:335px){
-    .banner__bienvenida{
-        font-size: $text-medium;
-    }
 
+    .banner{
+        &__bienvenida {
+            font-size: 2.6em;
+            }
+        &__descripcion {
+            left: 16%;
+            top: 14%;
+            width: 68%;
+        }
+        &__btn{
+            font-size: $text-xsmall;
+            top: 60%;
+        }
+    }
     /* SISTEMAS */
     .sistemas{
         margin: 16px;
         padding: 10px;
-
+    }
+    .section__siguientes--sig{ 
+        padding: 1rem 1rem 1rem 1rem;
     }
    }
 
@@ -195,8 +225,8 @@
             position: absolute;
             text-align: left;
             font-family: $font-principal;
-            left: 10%;
-            right: 20%;
+            left: 8%;
+/*             right: 20%; */
             top: 13%;
             width: 90%;
             }
@@ -222,7 +252,7 @@
                 font-size: $text-xsmall;
                 font-weight: bolder;
                 text-align: center;
-                top: 82%;
+                top: 70%;
                 left: 20%;
                 transform: translate(-50%, -50%);
             }
@@ -236,6 +266,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        gap: $spacing-medium;
     }
 
     .destacados>div{
@@ -243,13 +274,37 @@
     }
 
     /* TITULOS SISTEMAS */
+
     .sistemas{ 
         align-items: baseline;
+        gap: $spacing-xsmall;
+        &__articulo--div{
+            padding: $spacing-xsmall;
+        }
         &__articulo--titulo{
             font-size:$text-small;
         }
         &__articulo--leer{
         font-size: $text-xsmall;
         }
+    }
+        /* CONTACTO */
+
+        .contacto__mensaje--btn{
+            font-size: $text-xxsmall;
+        }
+}
+
+/* HOME - TABLET 2 */
+
+@media screen and (min-width: 481px) and (max-width: 650px) {
+
+    .banner__btn{
+        top: 80%;
+        left: 75%;
+    }
+    .banner__descripcion{
+        font-size: 0.9em;
+        left: 3%;
     }
 }

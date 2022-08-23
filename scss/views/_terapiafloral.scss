@@ -23,12 +23,16 @@ padding: 15px 60px 15px 60px;
     padding: 0.8rem 2rem 0.8rem 2rem;
     border-radius: 20px;
     border-color: $text-color;
-    color: $color-primary;
-    background-color: $color-secondary;
+    color: $text-color;
+    background-color: $color-primary;
     font-family: $font-principal;
     font-weight: bolder;
     margin: auto;
     font-size: $text-base;
+    &:hover {
+        background: $color-secondary;
+        color: $color-primary;
+    }
 }
 
 .terapia__sesion--btn{
@@ -51,7 +55,7 @@ padding: 15px 60px 15px 60px;
     &__titulo{
         display: grid;
         grid-area: titulo;
-        padding: 0 0 0 10px;
+        padding: 15px 0 10px 0;
         text-align: center;
         @extend .textbasic;
         font-size: $text-medium;
@@ -72,7 +76,6 @@ padding: 15px 60px 15px 60px;
             text-align: center;
             font-weight: bolder;
             font-size:$text-base;
-            text-decoration: none;
         }
         &--leer{
             @extend .destacados__articulo--leer;

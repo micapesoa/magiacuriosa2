@@ -38,7 +38,7 @@
 
 .contacto__mensaje--btn{
     margin-top: 2rem;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 2rem 0.8rem 2rem;
     @extend .textbasic;
     font-size: $text-xsmall; 
     font-weight: bolder;
@@ -50,3 +50,4 @@
         color: $color-primary;
     }
 }
+

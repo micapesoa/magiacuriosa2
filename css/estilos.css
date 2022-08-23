@@ -32,7 +32,7 @@ img {
   font-family: "Nunito", sans-serif;
   padding: 1em 4em 1em;
   font-size: 2.2em;
-  color: #644454;
+  color: #ec4c73;
   font-weight: bolder; }
 
 /* VIEWS */
@@ -45,7 +45,8 @@ img {
 .section__articulo {
   margin-top: 2.4rem; }
   .section__articulo--titulo {
-    font-size: 2.2em; }
+    font-size: 2.2em;
+    font-weight: bolder; }
   .section__articulo--resumen {
     font-size: 1.6em;
     margin-top: 1rem;
@@ -107,7 +108,7 @@ a {
 
 .contacto__mensaje--btn {
   margin-top: 2rem;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 2rem 0.8rem 2rem;
   font-size: 1em;
   font-weight: bolder;
   background-color: #FFFFFF;
@@ -146,7 +147,7 @@ a {
   .banner__btn {
     position: absolute;
     left: 20%;
-    top: 73%;
+    top: 69%;
     padding: 0.8rem 2rem 0.8rem 2rem;
     border-radius: 20px;
     border-color: #644454;
@@ -195,7 +196,7 @@ a {
   justify-content: center;
   padding: 2rem;
   margin: 2.4rem;
-  align-items: start; }
+  align-items: baseline; }
   .destacados__titulo {
     display: grid;
     grid-area: titulo;
@@ -268,12 +269,15 @@ a {
   padding: 0.8rem 2rem 0.8rem 2rem;
   border-radius: 20px;
   border-color: #644454;
-  color: #FFFFFF;
-  background-color: #ec4c73;
+  color: #644454;
+  background-color: #FFFFFF;
   font-family: "Nunito", sans-serif;
   font-weight: bolder;
   margin: auto;
   font-size: 1.6em; }
+  .terapia__gotero--btn:hover, .terapia__sesion--btn:hover {
+    background: #ec4c73;
+    color: #FFFFFF; }
 
 .terapia__sesion--btn {
   grid-area: boton2; }
@@ -290,7 +294,7 @@ a {
   .sistemas__titulo {
     display: grid;
     grid-area: titulo;
-    padding: 0 0 0 10px;
+    padding: 15px 0 10px 0;
     text-align: center;
     font-size: 2.2em;
     font-weight: bolder; }
@@ -306,8 +310,7 @@ a {
     .sistemas__articulo--titulo {
       text-align: center;
       font-weight: bolder;
-      font-size: 1.6em;
-      text-decoration: none; }
+      font-size: 1.6em; }
     .sistemas__articulo--leer {
       margin-top: 0; }
     .sistemas__articulo:nth-last-of-type(1) {
@@ -373,7 +376,7 @@ a {
       font-weight: bolder;
       text-align: center;
       font-size: 1.4em;
-      top: 70%;
+      top: 48%;
       left: 50%;
       transform: translate(-50%, -50%); }
     .banner__img {
@@ -388,7 +391,8 @@ a {
   .destacados {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    gap: 2rem; }
     .destacados__titulo {
       font-size: 2.4rem; }
   /* SISTEMAS */
@@ -398,7 +402,8 @@ a {
     flex-wrap: wrap;
     align-items: center;
     padding: 16px;
-    margin: 16px; }
+    margin: 16px;
+    gap: 1rem; }
     .sistemas__articulo {
       padding: 10px;
       margin-bottom: 10px; }
@@ -414,33 +419,53 @@ a {
     text-align: center; }
     .footer__contactanos {
       width: 100%;
-      padding: 4rem 5rem 1rem 5rem; }
+      padding: 4rem 4rem 1rem 4rem; }
     .footer__social {
       width: 100%;
-      padding: 2rem 5rem 2rem 5rem; }
+      padding: 1rem 4rem 1rem 4rem; }
     .footer__newsletter {
       width: 100%;
-      padding: 1rem 5rem 4rem 5rem; }
+      padding: 1rem 4rem 4rem 4rem; }
     .footer__newsletter--input {
       height: 2rem;
       width: 18rem; }
   /* TERAPIA FLORAL */
   .terapia__gotero--btn, .terapia__sesion--btn {
-    font-size: 1em; }
+    font-size: 1em;
+    color: #FFFFFF;
+    background-color: #ec4c73; }
   .terapia__sesion--btn {
     font-size: 1em; }
+  /* CONTACTO */
+  .contacto__mensaje--btn {
+    font-size: 0.8em;
+    color: #FFFFFF;
+    background-color: #ec4c73; }
   /* MAIN TITULOS PAG */
   .main__titulo {
-    padding-left: 2em; } }
+    padding-left: 2em; }
+  /* LINKS */
+  a:active {
+    text-decoration: underline;
+    color: #ec4c73; } }
 
 /* BIENVENIDA - CAMBIO TAMAÑO TITULO - MARGEN TERAPIAS -> MOBILE S */
 @media screen and (max-width: 335px) {
   .banner__bienvenida {
-    font-size: 2.2em; }
+    font-size: 2.6em; }
+  .banner__descripcion {
+    left: 16%;
+    top: 14%;
+    width: 68%; }
+  .banner__btn {
+    font-size: 1em;
+    top: 60%; }
   /* SISTEMAS */
   .sistemas {
     margin: 16px;
-    padding: 10px; } }
+    padding: 10px; }
+  .section__siguientes--sig {
+    padding: 1rem 1rem 1rem 1rem; } }
 
 /*---------------------------- -----Tablet------------------------------- */
 @media screen and (min-width: 481px) and (max-width: 978px) {
@@ -460,8 +485,8 @@ a {
       position: absolute;
       text-align: left;
       font-family: "Nunito", sans-serif;
-      left: 10%;
-      right: 20%;
+      left: 8%;
+      /*             right: 20%; */
       top: 13%;
       width: 90%; }
     .banner__descripcion {
@@ -485,7 +510,7 @@ a {
       font-size: 1em;
       font-weight: bolder;
       text-align: center;
-      top: 82%;
+      top: 70%;
       left: 20%;
       transform: translate(-50%, -50%); }
     .banner__img {
@@ -494,13 +519,29 @@ a {
   .destacados {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    gap: 2.4rem; }
   .destacados > div {
     width: 50%; }
   /* TITULOS SISTEMAS */
   .sistemas {
-    align-items: baseline; }
+    align-items: baseline;
+    gap: 1rem; }
+    .sistemas__articulo--div {
+      padding: 1rem; }
     .sistemas__articulo--titulo {
       font-size: 1.4em; }
     .sistemas__articulo--leer {
-      font-size: 1em; } }
+      font-size: 1em; }
+  /* CONTACTO */
+  .contacto__mensaje--btn {
+    font-size: 0.8em; } }
+
+/* HOME - TABLET 2 */
+@media screen and (min-width: 481px) and (max-width: 650px) {
+  .banner__btn {
+    top: 80%;
+    left: 75%; }
+  .banner__descripcion {
+    font-size: 0.9em;
+    left: 3%; } }
